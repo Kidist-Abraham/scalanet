@@ -1,7 +1,10 @@
 scalaVersionSufix: "2.12"
 
 dependencies:
-
+  com.mobius-software.iot:
+    dtls-async-client:
+      version: "1.0.7"
+      lang: java
   io.monix:
     monix:
       version: "3.0.0-RC2"

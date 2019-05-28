@@ -25,6 +25,11 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.mobius-software.iot</groupId>
+      <artifactId>dtls-async-client</artifactId>
+      <version>1.0.7</version>
+    </dependency>
+    <dependency>
       <groupId>io.monix</groupId>
       <artifactId>monix_2.12</artifactId>
       <version>3.0.0-RC2</version>

@@ -7,6 +7,7 @@ scala_library(
         "io.netty:netty-all",
         "com.chuusai:shapeless%",
         "org.slf4j:slf4j-api",
+        "com.mobius-software.iot:dtls-async-client"
     ],
     deps = ["@decco//src/io/iohk/decco"],
 )

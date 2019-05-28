@@ -157,6 +157,25 @@ def maven_dependencies():
   )
 
   java_import_external(
+      name = "commons_ds_io_and_commons_ds_io",
+      licenses = ["notice"],
+      jar_urls = [
+          "https://repo1.maven.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.jar"
+      ],
+      jar_sha256 = "a10418348d234968600ccb1d988efcbbd08716e1d96936ccc1880e7d22513474",
+      neverlink=0
+  )
+  java_import_external(
+      name = "commons_ds_io_and_commons_ds_io__NEVERLINK",
+      licenses = ["notice"],
+      jar_urls = [
+          "https://repo1.maven.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.jar"
+      ],
+      jar_sha256 = "a10418348d234968600ccb1d988efcbbd08716e1d96936ccc1880e7d22513474",
+      neverlink=1
+  )
+
+  java_import_external(
       name = "io___netty_and_netty_ds_all",
       licenses = ["notice"],
       jar_urls = [
@@ -248,6 +267,25 @@ def maven_dependencies():
           "https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar"
       ],
       jar_sha256 = "cc09ab0b140e0d0496c2165d4b32ce24f4d6446c0a26c5dc77b06bdf99ee8fae",
+      neverlink=1
+  )
+
+  java_import_external(
+      name = "org___bouncycastle_and_bcpkix_ds_jdk15on",
+      licenses = ["notice"],
+      jar_urls = [
+          "https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.59/bcpkix-jdk15on-1.59.jar"
+      ],
+      jar_sha256 = "601d85cfbcef76a1cb77cbf755a6234a4ba1d4c02a98d9a81028d471f388694f",
+      neverlink=0
+  )
+  java_import_external(
+      name = "org___bouncycastle_and_bcpkix_ds_jdk15on__NEVERLINK",
+      licenses = ["notice"],
+      jar_urls = [
+          "https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.59/bcpkix-jdk15on-1.59.jar"
+      ],
+      jar_sha256 = "601d85cfbcef76a1cb77cbf755a6234a4ba1d4c02a98d9a81028d471f388694f",
       neverlink=1
   )
 
@@ -366,6 +404,44 @@ def maven_dependencies():
   )
 
   java_import_external(
+      name = "log4j_and_log4j",
+      licenses = ["notice"],
+      jar_urls = [
+          "https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar"
+      ],
+      jar_sha256 = "1d31696445697720527091754369082a6651bd49781b6005deb94e56753406f9",
+      neverlink=0
+  )
+  java_import_external(
+      name = "log4j_and_log4j__NEVERLINK",
+      licenses = ["notice"],
+      jar_urls = [
+          "https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar"
+      ],
+      jar_sha256 = "1d31696445697720527091754369082a6651bd49781b6005deb94e56753406f9",
+      neverlink=1
+  )
+
+  java_import_external(
+      name = "org___bouncycastle_and_bcprov_ds_jdk15on",
+      licenses = ["notice"],
+      jar_urls = [
+          "https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.59/bcprov-jdk15on-1.59.jar"
+      ],
+      jar_sha256 = "1c31e44e331d25e46d293b3e8ee2d07028a67db011e74cb2443285aed1d59c85",
+      neverlink=0
+  )
+  java_import_external(
+      name = "org___bouncycastle_and_bcprov_ds_jdk15on__NEVERLINK",
+      licenses = ["notice"],
+      jar_urls = [
+          "https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.59/bcprov-jdk15on-1.59.jar"
+      ],
+      jar_sha256 = "1c31e44e331d25e46d293b3e8ee2d07028a67db011e74cb2443285aed1d59c85",
+      neverlink=1
+  )
+
+  java_import_external(
       name = "io___monix_and_monix_ds_reactive__2___12__EXTERNAL",
       licenses = ["notice"],
       jar_urls = [
@@ -419,6 +495,25 @@ def maven_dependencies():
           "https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar"
       ],
       jar_sha256 = "7cc3b6ceb56e879cb977e8e043f4bfe2e062f78795efd7efa09f85003cb3230a",
+      neverlink=1
+  )
+
+  java_import_external(
+      name = "commons_ds_logging_and_commons_ds_logging",
+      licenses = ["notice"],
+      jar_urls = [
+          "https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"
+      ],
+      jar_sha256 = "daddea1ea0be0f56978ab3006b8ac92834afeefbd9b7e4e6316fca57df0fa636",
+      neverlink=0
+  )
+  java_import_external(
+      name = "commons_ds_logging_and_commons_ds_logging__NEVERLINK",
+      licenses = ["notice"],
+      jar_urls = [
+          "https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"
+      ],
+      jar_sha256 = "daddea1ea0be0f56978ab3006b8ac92834afeefbd9b7e4e6316fca57df0fa636",
       neverlink=1
   )
 
@@ -495,6 +590,25 @@ def maven_dependencies():
           "https://repo1.maven.org/maven2/io/monix/monix_2.12/3.0.0-RC2/monix_2.12-3.0.0-RC2.jar"
       ],
       jar_sha256 = "a669ea3d6353b5e25efbe6344410b8bedf37a85cf8dfca5246d361881116a18e",
+      neverlink=1
+  )
+
+  java_import_external(
+      name = "com___mobius_ds_software___iot_and_dtls_ds_async_ds_client",
+      licenses = ["notice"],
+      jar_urls = [
+          "https://repo1.maven.org/maven2/com/mobius-software/iot/dtls-async-client/1.0.7/dtls-async-client-1.0.7.jar"
+      ],
+      jar_sha256 = "264e8737f81284a4b571fbd6b35db60c116de8c015640dc2da4f4670e879eb28",
+      neverlink=0
+  )
+  java_import_external(
+      name = "com___mobius_ds_software___iot_and_dtls_ds_async_ds_client__NEVERLINK",
+      licenses = ["notice"],
+      jar_urls = [
+          "https://repo1.maven.org/maven2/com/mobius-software/iot/dtls-async-client/1.0.7/dtls-async-client-1.0.7.jar"
+      ],
+      jar_sha256 = "264e8737f81284a4b571fbd6b35db60c116de8c015640dc2da4f4670e879eb28",
       neverlink=1
   )
 
