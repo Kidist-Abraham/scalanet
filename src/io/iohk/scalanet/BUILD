@@ -1,4 +1,4 @@
-load("//scala:rules.bzl", "scala_library", "scala_test")
+load("//scala:rules.bzl", "scala_library", "scala_test","scala_binary")
 
 scala_library(
     name = "scalanet",
@@ -27,3 +27,15 @@ scala_test(
         "@decco//src/io/iohk/decco/auto",
     ],
 )
+scala_binary(
+    name = "try-bin",
+    srcs = ["Try.scala"],
+    deps = [
+        "scalanet",
+        "@decco//src/io/iohk/decco",
+        "@decco//src/io/iohk/decco/auto",
+    ],
+    main_class = "Try"
+)
+
+
